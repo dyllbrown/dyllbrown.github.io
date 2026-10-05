@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clutch Sensor Mounting Redesign — Case Study</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="../index.html">Dyllan Brown <span class="brand-accent">·</span> Design Engineer</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#case-studies">Case Studies</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../about.html#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <span class="badge badge-progress">In Progress &middot; Design &amp; Build Complete, Installation Pending</span>
+      <p class="eyebrow">Case Study 04 &middot; Sensor Fixture Design</p>
+      <h1>Clutch Sensor Mounting Redesign</h1>
+      <p class="subtitle">Root-cause-driven iteration on a safety-critical sensor fixture</p>
+    </section>
+
+    <section class="container case-body">
+      <h2>Problem</h2>
+      <p>
+        A sensor on a continuous-motion production station monitors whether a mechanical clutch is properly engaged.
+        This clutch is a critical safeguard against product damage and drivetrain wear, so false or missed readings
+        from this sensor create real risk. The original (v1) mounting design was susceptible to vibration interference
+        and required precise manual setup directly on the machine's moving assembly, creating a risk of mechanical
+        binding if misaligned.
+      </p>
+
+      <h2>My Role &amp; Constraints</h2>
+      <p>
+        I owned the full redesign, from diagnosing the v1 failure mode through the v2 mounting concept.
+      </p>
+
+      <h2>Approach &amp; Key Decisions</h2>
+      <ul>
+        <li>Root-caused the v1 issue to two compounding factors: direct attachment to a moving component (introducing vibration into sensor readings) and a manual alignment step with no margin for error.</li>
+        <li>Redesigned the mount as a floor-standing fixture, fully decoupling the sensor from the machine's moving components.</li>
+        <li>Added vibration isolation and a simplified, repeatable mounting/alignment process.</li>
+      </ul>
+
+      <div class="image-grid">
+        <figure class="image-frame" style="margin:0;">
+          <img src="../assets/images/d14-clutch-sensor/v1-tabletop-arm-mount.png" alt="CAD render of the v1 tabletop/arm mount design">
+          <figcaption>v1 design — tabletop-attachable arm with fine-tune bracket, attached directly to the machine's moving assembly.</figcaption>
+        </figure>
+        <figure class="image-frame" style="margin:0;">
+          <img src="../assets/images/d14-clutch-sensor/v2-render.png" alt="CAD render of the v2 floor-mounted sensor bracket positioned near the turret">
+          <figcaption>v2 design — floor-standing bracket, fully decoupled from the turret, verified for clearance in CAD before fabrication.</figcaption>
+        </figure>
+      </div>
+
+      <div class="outcome-panel is-progress">
+        <h2>Expected Outcome</h2>
+        <p>
+          Design and fabrication are complete; installation is pending. Once installed, the v2 design is expected to:
+        </p>
+        <div class="stat-grid">
+          <div class="stat-card"><span class="big">0</span><span class="small">Mechanical-binding risk from incorrect keyway setup (eliminated by design)</span></div>
+          <div class="stat-card"><span class="big">&darr;</span><span class="small">False clutch-trip alarms caused by machine vibration</span></div>
+        </div>
+      </div>
+
+      <h2>Skills Demonstrated</h2>
+      <div class="pill-row">
+        <span class="pill">Root-Cause Analysis</span>
+        <span class="pill">Sensor Fixture Design</span>
+        <span class="pill">Vibration Isolation</span>
+        <span class="pill">Iterative Redesign</span>
+      </div>
+    </section>
+
+    <nav class="case-nav container">
+      <a href="flushing-grommet.html">&larr; Previous: Flushing Grommet Redesign</a>
+      <a href="../index.html#case-studies" class="all-link">All Case Studies</a>
+      <a href="cell-wash-infeed-upgrade.html">Next: Conveyor Infeed Upgrade &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Dyllan Brown</span>
+      <div class="contact-links">
+        <a href="mailto:Dyllanbrown94@gmail.com">Dyllanbrown94@gmail.com</a>
+        <a href="https://www.linkedin.com/in/dyllan-brown-eng/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

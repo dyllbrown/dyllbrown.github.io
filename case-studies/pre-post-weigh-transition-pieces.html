@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse-Engineered Injection-Molded Transition Part — Case Study</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="../index.html">Dyllan Brown <span class="brand-accent">·</span> Design Engineer</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#case-studies">Case Studies</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../about.html#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <span class="badge badge-proven">Proven Outcome</span>
+      <p class="eyebrow">Case Study 07 &middot; Reverse Engineering &amp; Injection Molding</p>
+      <h1>Reverse-Engineered Injection-Molded Transition Part</h1>
+      <p class="subtitle">Reverse engineering, DFM for injection molding, and vendor-partnered tooling</p>
+    </section>
+
+    <section class="container case-body">
+      <figure class="image-frame">
+        <img src="../assets/images/pre-post-weigh/full-part-render-clean.png" alt="Full-length render of the reverse-engineered conveyance transition part">
+        <figcaption>The reconstructed 3D model of the transition part, rebuilt entirely from physical measurements.</figcaption>
+      </figure>
+
+      <h2>Problem</h2>
+      <p>
+        A wear component acting as a transition "deadplate" between two sections of conveyance on a piece of
+        production equipment was only available as a custom part from the original equipment vendor, at high cost
+        and with a long lead time, with no alternative sourcing option.
+      </p>
+
+      <h2>My Role &amp; Constraints</h2>
+      <p>
+        The original equipment vendor would not provide dimensioned drawings, so I had no starting data package and
+        had to generate the full design definition myself before any alternative sourcing was possible.
+      </p>
+
+      <h2>Approach &amp; Key Decisions</h2>
+      <ul>
+        <li>Reverse-engineered the part by taking direct physical measurements and reconstructing a complete 3D model and drawing package from scratch.</li>
+        <li>Selected injection molding over machining, since the part is consumed routinely across multiple machines as part of ongoing maintenance — making tooling investment worthwhile for high-volume, low-unit-cost production.</li>
+        <li>Partnered with an injection-molding manufacturer through the DFM process, working through gate location, ejector-pin placement, uniform wall thickness (to avoid sink marks, warping, and dimensional inaccuracy), minimum-thickness and draft requirements, and material reduction opportunities to minimize part cost.</li>
+        <li>Iterated the design across multiple revisions to refine moldability and fit.</li>
+      </ul>
+
+      <div class="image-grid">
+        <figure class="image-frame" style="margin:0;">
+          <img src="../assets/images/pre-post-weigh/detail-view.png" alt="Detail render of the transition part's knife-edge geometry">
+          <figcaption>Detail view of the knife-edge transition geometry, reconstructed from direct measurement of the original part.</figcaption>
+        </figure>
+        <figure class="image-frame" style="margin:0;">
+          <img src="../assets/images/pre-post-weigh/photo-in-service.png" alt="Photo of the transition part installed and in service on the checkweigher">
+          <figcaption>The part in service on the checkweigher, providing the transition between conveyor sections.</figcaption>
+        </figure>
+      </div>
+
+      <div class="outcome-panel">
+        <h2>Outcome</h2>
+        <div class="stat-grid">
+          <div class="stat-card"><span class="big">~80%</span><span class="small">Reduction in per-part manufacturing cost</span></div>
+          <div class="stat-card"><span class="big">4&times;</span><span class="small">Faster lead time (about a month down to weeks)</span></div>
+        </div>
+      </div>
+
+      <h2>Skills Demonstrated</h2>
+      <div class="pill-row">
+        <span class="pill">Reverse Engineering</span>
+        <span class="pill">Injection-Molding DFM</span>
+        <span class="pill">Vendor / Tooling Partnership</span>
+        <span class="pill">Cost Reduction</span>
+        <span class="pill">Supply-Chain Risk Mitigation</span>
+      </div>
+    </section>
+
+    <nav class="case-nav container">
+      <a href="new-boat.html">&larr; Previous: Carrier Redesign</a>
+      <a href="../index.html#case-studies" class="all-link">All Case Studies</a>
+      <a href="../index.html#case-studies">Back to Top &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Dyllan Brown</span>
+      <div class="contact-links">
+        <a href="mailto:Dyllanbrown94@gmail.com">Dyllanbrown94@gmail.com</a>
+        <a href="https://www.linkedin.com/in/dyllan-brown-eng/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

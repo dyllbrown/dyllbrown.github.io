@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Dyllan Brown, Design Engineer</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">Dyllan Brown <span class="brand-accent">·</span> Design Engineer</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#case-studies">Case Studies</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-flex">
+        <div class="hero-text">
+          <p class="eyebrow">About Me</p>
+          <h1>Dyllan Brown</h1>
+          <p class="lede">
+            I'm a mechanical design engineer with 5+ years of hands-on experience taking parts and equipment from
+            concept to production — combining SolidWorks/AutoCAD design work, GD&amp;T and DFM/DFMEA analysis, rapid
+            prototyping, and Design-of-Experiments validation with strong root-cause and reliability engineering
+            instincts. My experience spans both production equipment design and new part/product development within a
+            high-volume, highly automated manufacturing environment. I'm looking to bring that concept-through-validation
+            skill set to a Design Engineer role in either equipment design or product development.
+          </p>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/images/headshot.jpg" alt="Portrait of Dyllan Brown">
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head">
+        <h2>Skills &amp; Tools</h2>
+        <p>Organized by the kind of work I do — all demonstrated in the case studies on this site.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-group">
+          <h3>Design &amp; CAD</h3>
+          <div class="pill-row">
+            <span class="pill">SolidWorks</span>
+            <span class="pill">SolidWorks PDM</span>
+            <span class="pill">AutoCAD</span>
+            <span class="pill">GD&amp;T</span>
+            <span class="pill">Reverse Engineering</span>
+            <span class="pill">DFM / DFA</span>
+            <span class="pill">DFMEA / PFMEA</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Fixture &amp; Tooling Design</h3>
+          <div class="pill-row">
+            <span class="pill">Pressure / Leak Test Fixtures</span>
+            <span class="pill">Calibration Fixtures</span>
+            <span class="pill">Ergonomic Work-Holding</span>
+            <span class="pill">Sensor Mounting &amp; Alignment</span>
+            <span class="pill">3D Printing / Rapid Prototyping</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Manufacturing &amp; Validation</h3>
+          <div class="pill-row">
+            <span class="pill">Injection Molding DFM</span>
+            <span class="pill">Material Selection</span>
+            <span class="pill">Equipment Installation &amp; Commissioning</span>
+            <span class="pill">DOE &amp; Statistical Analysis (JMP)</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Systems &amp; Facilities</h3>
+          <div class="pill-row">
+            <span class="pill">Facility / Process Layout</span>
+            <span class="pill">Utility &amp; Exhaust Calculations</span>
+            <span class="pill">Vendor Management</span>
+            <span class="pill">Mechanical Power Transmission</span>
+            <span class="pill">PLC / Controls (Beckhoff TwinCAT, Structured Text)</span>
+            <span class="pill">Vision Software &amp; Hardware</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Working Style</h3>
+          <div class="pill-row">
+            <span class="pill">Root-Cause Analysis</span>
+            <span class="pill">Program Ownership</span>
+            <span class="pill">Cross-Functional Collaboration</span>
+            <span class="pill">Data-Driven Decision Making</span>
+            <span class="pill">Six Sigma / Continuous Improvement</span>
+            <span class="pill">Project Management</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="resume">
+      <div class="contact-panel">
+        <div>
+          <h2>Let's talk</h2>
+          <p>Looking for a Design Engineer with this background? I'd love to hear from you.</p>
+        </div>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="assets/resume/resume.pdf" target="_blank">Download Resume (PDF)</a>
+          <a class="btn btn-secondary" href="mailto:Dyllanbrown94@gmail.com">Dyllanbrown94@gmail.com</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/dyllan-brown-eng/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Dyllan Brown</span>
+      <div class="contact-links">
+        <a href="mailto:Dyllanbrown94@gmail.com">Dyllanbrown94@gmail.com</a>
+        <a href="https://www.linkedin.com/in/dyllan-brown-eng/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

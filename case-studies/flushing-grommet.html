@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flushing Grommet Redesign — Case Study</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="../index.html">Dyllan Brown <span class="brand-accent">·</span> Design Engineer</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#case-studies">Case Studies</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../about.html#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <span class="badge badge-proven">Proven Outcome</span>
+      <p class="eyebrow">Case Study 03 &middot; Component Design</p>
+      <h1>Flushing Grommet Redesign</h1>
+      <p class="subtitle">Material selection &amp; design-for-manufacture iteration</p>
+    </section>
+
+    <section class="container case-body">
+      <figure class="image-frame">
+        <img src="../assets/images/flushing-grommet/photo-produced-parts.png" alt="Photo of produced flushing grommet manifold assemblies">
+        <figcaption>Finished manifold assemblies with the redesigned grommets installed, ready for the production line.</figcaption>
+      </figure>
+
+      <h2>Problem</h2>
+      <p>
+        A sealing component used in an automated cleaning sequence was a two-piece assembly (a rigid insert plus a
+        separate molded seal). The molded seal repeatedly popped free during cleaning cycles, causing chemical leaks
+        that created a direct quality risk, while also driving high spare-parts consumption.
+      </p>
+
+      <figure class="image-frame" style="max-width:480px;">
+        <img src="../assets/images/flushing-grommet/v1-failure-mode-gap.png" alt="Close-up photo showing a gap between sealing surfaces on the v1 design">
+        <figcaption>The v1 failure mode: seal material deformation left a visible gap between sealing surfaces, allowing chemical to leak through.</figcaption>
+      </figure>
+
+      <h2>My Role &amp; Constraints</h2>
+      <p>
+        I owned the redesign of this component, from root-cause diagnosis through material selection and final part
+        design.
+      </p>
+
+      <h2>Approach &amp; Key Decisions</h2>
+      <ul>
+        <li>Diagnosed two compounding failure modes: the seal physically dislodging during cleaning, and the seal material deforming/wearing out after about a month of service life.</li>
+        <li>Selected a chemically-resistant polyurethane as a single-material solution — compatible with the process chemical, inexpensive, easily machinable, and able to seal effectively against the mating surface without damaging it.</li>
+        <li>Redesigned the part from a 2-piece assembly into a single-piece machined component, eliminating the failure mode where the seal could separate from its housing entirely.</li>
+      </ul>
+
+      <div class="image-grid">
+        <figure class="image-frame" style="margin:0;">
+          <img src="../assets/images/flushing-grommet/exploded-assembly-view.png" alt="Exploded view of the original 2-piece grommet assembly">
+          <figcaption>Exploded view of the original 2-piece assembly (insert + separate seal) within the manifold.</figcaption>
+        </figure>
+        <figure class="image-frame" style="margin:0;">
+          <img src="../assets/images/flushing-grommet/final-single-piece-render.png" alt="Render of the final single-piece polyurethane grommet">
+          <figcaption>The final single-piece polyurethane part &mdash; no separate seal to dislodge or deform.</figcaption>
+        </figure>
+      </div>
+
+      <div class="outcome-panel">
+        <h2>Outcome</h2>
+        <p>
+          Eliminated a recurring quality and safety risk and the associated equipment downtime.
+        </p>
+        <div class="stat-grid">
+          <div class="stat-card"><span class="big">~$10K/yr</span><span class="small">Spare-parts cost saved</span></div>
+          <div class="stat-card"><span class="big">~4%</span><span class="small">Equipment capacity improvement</span></div>
+          <div class="stat-card"><span class="big">4&times;</span><span class="small">PM interval extended (monthly &rarr; quarterly)</span></div>
+        </div>
+      </div>
+
+      <h2>Skills Demonstrated</h2>
+      <div class="pill-row">
+        <span class="pill">Root-Cause Analysis</span>
+        <span class="pill">Material Selection</span>
+        <span class="pill">Design-for-Manufacture</span>
+        <span class="pill">Cost Reduction</span>
+        <span class="pill">Quality / Reliability Engineering</span>
+      </div>
+    </section>
+
+    <nav class="case-nav container">
+      <a href="electrolyte-filler-maintenance-program.html">&larr; Previous: Electrolyte Filler Maintenance Program</a>
+      <a href="../index.html#case-studies" class="all-link">All Case Studies</a>
+      <a href="d14-clutch-sensor-mounting.html">Next: Clutch Sensor Mounting Redesign &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Dyllan Brown</span>
+      <div class="contact-links">
+        <a href="mailto:Dyllanbrown94@gmail.com">Dyllanbrown94@gmail.com</a>
+        <a href="https://www.linkedin.com/in/dyllan-brown-eng/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
