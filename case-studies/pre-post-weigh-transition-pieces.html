@@ -64,7 +64,7 @@
 
       <h2>Design Process</h2>
       <p>
-        The part went from hand measurements to production in four phases. Each one existed to retire a specific risk
+        The part went from hand measurements to production in five phases. Each one existed to retire a specific risk
         while it was still cheap to fix.
       </p>
 
@@ -75,7 +75,6 @@
           <li>Modeled separate infeed and outfeed variants. The two transitions mirror each other but differ in approach angle and in how the knife edge meets the belt, so each needed its own geometry rather than one symmetric part.</li>
           <li>Drove every feature off direct measurement of the existing conveyance — belt height, chain pitch, and the gap the part has to bridge — so the replacement would drop into the machine with no rework.</li>
           <li>Designed an integrated mounting bracket with slotted holes, giving enough adjustment at install to absorb machine-to-machine variation instead of custom shimming every tool.</li>
-          <li>Produced a full drawing package where none had ever existed, so the part could be competitively quoted and inspected on receipt.</li>
         </ul>
 
         <div class="image-grid">
@@ -96,18 +95,28 @@
           </figure>
           <figure class="image-frame" style="margin:0;">
             <img src="../assets/images/pre-post-weigh/detail-view.png" alt="Detail render of the transition part's knife-edge geometry">
-            <figcaption>Detail of the knife-edge transition geometry, reconstructed from direct measurement of the original part.</figcaption>
           </figure>
         </div>
-
-        <figure class="image-frame">
-          <img src="../assets/images/pre-post-weigh/cad-drawing-package.png" alt="Drawing sheet for the transition part, with dimensions redacted">
-          <figcaption>A sheet from the drawing package built from scratch. Dimensions and tolerances are redacted here.</figcaption>
-        </figure>
       </div>
 
       <div class="sub-project">
         <span class="phase-label">Phase 02</span>
+        <h3>Tolerancing &amp; Drawing Definition</h3>
+        <ul>
+          <li>Produced a full drawing package where none had ever existed, so the part could be competitively quoted and inspected on receipt.</li>
+          <li>Defined datums off the features that actually control function and fit — the mounting interface and the running surface — so the part gets measured the same way it gets installed.</li>
+          <li>Applied form, orientation, location, and profile tolerances rather than blanket dimensional tolerances, which tells the molder exactly which features matter and leaves the process free everywhere else.</li>
+          <li>Toleranced the threaded-insert positions at maximum material condition, so mounting holes stay interchangeable from machine to machine.</li>
+        </ul>
+
+        <figure class="image-frame">
+          <img src="../assets/images/pre-post-weigh/gdt-drawing.png" alt="Drawing sheet showing datums and geometric tolerances, with dimensions redacted">
+          <figcaption>A sheet from the drawing package. Datums and geometric tolerances are shown; dimensions, the supplier callout, and the drawing number are redacted.</figcaption>
+        </figure>
+      </div>
+
+      <div class="sub-project">
+        <span class="phase-label">Phase 03</span>
         <h3>Design for Moldability</h3>
         <ul>
           <li>Replaced solid sections with a ribbed structure to keep wall thickness uniform. Even walls cool at an even rate, which is what stops the part from warping as it shrinks.</li>
@@ -118,35 +127,34 @@
         </ul>
 
         <figure class="image-frame">
-          <img src="../assets/images/pre-post-weigh/dfm-coring-ribbing.png" alt="CAD render showing cored pockets and ribbing on the underside of the part">
-          <figcaption>The reworked underside — cored pockets and ribbing replace solid material while holding wall thickness uniform.</figcaption>
+          <img src="../assets/images/pre-post-weigh/dfm-edge-radii.png" alt="CAD render highlighting the radiused feathered edges along the running surface">
+          <figcaption>Radii added at the feathered edges to improve fill and make the edge hold up in service.</figcaption>
         </figure>
 
         <div class="image-grid">
           <figure class="image-frame" style="margin:0;">
-            <img src="../assets/images/pre-post-weigh/dfm-draft-analysis.png" alt="Draft analysis render color-coding faces by draft angle">
-            <figcaption>Draft analysis — faces color-coded by draft angle to confirm the part will release from the tool.</figcaption>
+            <img src="../assets/images/pre-post-weigh/dfm-draft-analysis-underside.png" alt="Draft analysis render of the part underside">
           </figure>
           <figure class="image-frame" style="margin:0;">
-            <img src="../assets/images/pre-post-weigh/dfm-wall-thickness.png" alt="Section view with the thickest regions highlighted in red">
-            <figcaption>Thickness analysis — red flags the heavy sections that drive sink and void risk.</figcaption>
+            <img src="../assets/images/pre-post-weigh/dfm-draft-analysis-section.png" alt="Draft analysis render showing color-coded faces through the cored pockets">
+            <figcaption>Draft analysis — faces color-coded by draft angle to confirm the part will release from the tool.</figcaption>
           </figure>
         </div>
 
         <div class="image-grid">
           <figure class="image-frame" style="margin:0;">
-            <img src="../assets/images/pre-post-weigh/dfm-draft-detail.png" alt="Close-up draft analysis at the nose of the part">
-            <figcaption>Close-up at the nose, where draft is hardest to hold against the thin leading edge.</figcaption>
+            <img src="../assets/images/pre-post-weigh/dfm-thickness-analysis.png" alt="Thickness analysis render highlighting the thickest regions of the part">
+            <figcaption>Analyzed thickest areas for uniformity.</figcaption>
           </figure>
           <figure class="image-frame" style="margin:0;">
-            <img src="../assets/images/pre-post-weigh/dfm-radii-detail.png" alt="Close-up showing radii added at the feathered edges">
-            <figcaption>Radii added at the feathered edges to improve fill and make the edge hold up in service.</figcaption>
+            <img src="../assets/images/pre-post-weigh/dfm-draft-analysis-edge.png" alt="Close-up draft analysis at the knife edge">
+            <figcaption>Draft analysis — faces color-coded by draft angle to confirm the part will release from the tool.</figcaption>
           </figure>
         </div>
       </div>
 
       <div class="sub-project">
-        <span class="phase-label">Phase 03</span>
+        <span class="phase-label">Phase 04</span>
         <h3>Mold Flow Analysis</h3>
         <ul>
           <li>Set gate location with the molder so the melt front reaches the far end of this long, narrow part before it freezes off — avoiding short shots and keeping weld lines off the load-bearing running surface.</li>
@@ -184,10 +192,10 @@
       </div>
 
       <div class="sub-project">
-        <span class="phase-label">Phase 04</span>
-        <h3>Production Validation</h3>
+        <span class="phase-label">Phase 05</span>
+        <h3>T0/T1 Sample Validation</h3>
         <ul>
-          <li>Fit-checked first-article parts on the actual machines to confirm the mounting interface, running height, and transfer gap matched what the reverse-engineered model predicted.</li>
+          <li>Fit-checked T0 and T1 trial samples on the actual machines to confirm the mounting interface, running height, and transfer gap matched what the reverse-engineered model predicted — before signing off on the tool.</li>
           <li>Ran static transfer checks by hand, then dynamic checks at full line rate, confirming parts crossed the transition without tipping, hanging up, or losing orientation.</li>
           <li>Completed a Gage R&amp;R against a golden sample to prove the new part did not disturb weighing repeatability. The transition feeds a checkweigher, so any added drag or contact at the handoff shows up directly as measurement noise.</li>
           <li>Released to production only once the molded part matched the incumbent on both transfer reliability and measurement stability.</li>
@@ -223,6 +231,7 @@
         <span class="pill">Reverse Engineering</span>
         <span class="pill">Injection-Molding DFM</span>
         <span class="pill">Mold Flow Analysis</span>
+        <span class="pill">GD&amp;T</span>
         <span class="pill">Drawing Packages</span>
         <span class="pill">Vendor / Tooling Partnership</span>
         <span class="pill">Gage R&amp;R / MSA</span>
