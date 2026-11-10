@@ -462,6 +462,63 @@ a { color: inherit; }
   max-width: 720px;
 }
 
+.sub-project ul {
+  margin: 10px 0 0;
+  max-width: 720px;
+}
+
+.sub-project .image-frame,
+.sub-project .image-grid,
+.sub-project .video-frame {
+  margin: 20px 0 4px;
+}
+
+.phase-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 4px;
+}
+
+/* ---------- Video ---------- */
+
+.video-frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: #eef0f0;
+  margin: 32px 0;
+}
+
+.video-frame figcaption {
+  padding: 12px 18px;
+  font-size: 0.85rem;
+  color: var(--color-ink-soft);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Trims a fixed strip off the top of the source recording (962x762 -> 962x738). */
+.video-crop {
+  position: relative;
+  width: 100%;
+  padding-top: 76.71%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.video-crop video {
+  position: absolute;
+  top: -3.25%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .outcome-panel {
   background: var(--color-success-soft);
   border: 1px solid #cdeadb;
