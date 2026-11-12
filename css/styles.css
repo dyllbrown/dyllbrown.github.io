@@ -427,6 +427,13 @@ a { color: inherit; }
   font-style: italic;
 }
 
+/* No caption above it, so the divider has nothing to separate. */
+.figure-note:only-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
